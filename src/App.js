@@ -1,16 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+
+
 
 function App() {
-  const persona ={nombre: "agustina", mail:"agustinasegat@gmail.com"}
+
   return (
     <div className="App">
+      <Navbar/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola {persona.nombre} con {persona.mail}
-        </p>
-        <ButtonComponent/>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
