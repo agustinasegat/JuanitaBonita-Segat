@@ -1,0 +1,9 @@
+.itemContainer{
+        background: #F50F6B;
+        height: 100px;
+        font-family: "Varela Round";
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}

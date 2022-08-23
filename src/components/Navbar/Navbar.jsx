@@ -1,5 +1,6 @@
+import CartWidget from './cartWidget';
+import Logo from '../images/Logo.png';
 
-import Logo from './images/Logo.png';
 
 const Navbar = () => {
 
@@ -18,7 +19,7 @@ const Navbar = () => {
         height: "50px",
     }
 
-    const container_logo={
+    const container_logo = {
         display: "flex",
         alignItems: "center"
     }
@@ -44,9 +45,7 @@ const Navbar = () => {
         color: "#F50F6B",
         letterSpacing: "2px",
         fontFamily: "Varela Round",
-        marginRight: "10px",
         fontWeight: "500",
-
     }
 
     const saleItem = {
@@ -58,7 +57,10 @@ const Navbar = () => {
         fontWeight: "700",
         letterSpacing: "2px",
         fontFamily: "Varela Round",
-        marginRight: "10px"
+    }
+
+    const cart = {
+        padding: "20px"
     }
 
     function changeColor({ target }) {
@@ -66,7 +68,7 @@ const Navbar = () => {
     }
     return (
 
-        <nav style={nav} className="nav">
+<nav style={nav} className="nav">
             <div style={container_logo}>
                 <img style={logo} src={Logo} alt="" />
                 <h1 style={logo_name}>Juanita Bonita</h1>
@@ -78,7 +80,9 @@ const Navbar = () => {
                 <a onClick={changeColor} style={items} href="">Anillos</a>
                 <a onClick={changeColor} style={saleItem} href="">REBAJAS</a>
             </div>
+           <CartWidget/> 
         </nav>
+
     )
 }
 

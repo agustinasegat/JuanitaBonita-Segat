@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar'
-
+import Navbar from './components/Navbar/Navbar';
+import ItemListContainer from './components/itemListContainer/itemListContainer';
 
 
 function App() {
@@ -9,9 +9,11 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <ItemListContainer greeting="¡Hola! Soy el Item List Container" color="white"/>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -25,8 +27,6 @@ function App() {
   );
 }
 
-const ButtonComponent=()=>{
-  return <button>Click aca!</button>
-}
+
 
 export default App;
