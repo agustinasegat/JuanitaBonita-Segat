@@ -1,13 +1,15 @@
 import React from 'react';
 import './itemListContainer.css';
+import ItemCount from './itemCount';
 
 
 const ItemListContainer = (props) => {
-    return (
+  return (
           <div className='itemContainer'>
-            <h2 style={{color:props.color}}> {props.greeting}</h2>
+            <ItemCount/>
             </div>
-    );
+           
+  );
 };
 
 export default ItemListContainer;

@@ -1,0 +1,62 @@
+.nav {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 5px #9E9E9E;
+    height: 100px;
+}
+
+.container_logo {
+    display: flex;
+    align-items: center
+}
+
+.logo {
+    height: 50px
+}
+
+.logo_name {
+    color: #F50F6B;
+    letter-spacing: 1px;
+    font-family: "Varela Round";
+    font-weight: 500;
+    font-size: 20px
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.items {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #F50F6B;
+    letter-spacing: 2px;
+    font-family: "Varela Round";
+    font-weight: 500
+}
+
+.items:hover {
+    color: black
+}
+
+.saleItem {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #F50F6B;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Varela Round";
+}
+
+.saleItem:hover {
+    color: black
+}

@@ -1,18 +1,23 @@
 .cart-widget {
-    position: relative;
-    cursor: pointer;
+  position: relative;
+  cursor: pointer;
 
-  }
-  
-  .item-numbers {
-    display: inline-block;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    position: absolute;
-    font-family: Varela Round;
-    left: 20px;
-    top: 10px;
-    line-height: 17px;
-  }
-  
+}
+
+.item-numbers {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  position: absolute;
+  font-family: Varela Round;
+  left: 40px;
+  top: 27px;
+  line-height: 17px;
+}
+
+.cart-icon {
+  font-size: 48px;
+  color: #F50F6B;
+  padding: 20px
+}
