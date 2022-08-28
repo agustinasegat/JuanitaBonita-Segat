@@ -16,7 +16,7 @@ const Navbar = () => {
                 <a className="items" href="">Anillos</a>
                 <a className='saleItem' href="">REBAJAS</a>
             </div>
-            <CartWidget />
+            <CartWidget/>
         </nav>
     )
 }

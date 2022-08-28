@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./itemCount.css"
 
 
-function ItemCount() {
+const ItemCount = () => {
     const [count, setCount] = useState(1)
     const stock = 10
     const addProduct = () => {
@@ -16,6 +16,9 @@ function ItemCount() {
             setCount(count - 1)
     }
 
+    useEffect(()=>{
+        <p>{count}</p>
+    })
     return (
 
         <div className='item-Count'>
