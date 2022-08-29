@@ -16,15 +16,13 @@ const ItemCount = () => {
             setCount(count - 1)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         <p>{count}</p>
     })
     return (
 
-        <div className='item-Count'>
-            <div>
-                <h3>Nombre del Producto</h3>
-            </div>
+
+        <div>
             <div className='container-Count'>
                 <button className='btns' onClick={takeProduct}>-</button>
                 <p>{count}</p>

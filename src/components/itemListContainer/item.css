@@ -1,0 +1,29 @@
+.item-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 5%;
+    margin: 5%;
+    height: 40%;
+    width: 30%;
+    padding: 2%;
+    font-family: "Varela Round";
+}
+
+.item-Img{
+    height: 75%;
+    width: 75%;
+}
+
+.item-Title{
+    font-size: 28px;
+}
+
+.item-Price{
+    font-size: 30px;
+    font-weight: 600;
+
+}
