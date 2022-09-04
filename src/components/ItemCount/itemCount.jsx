@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./itemCount.css"
 
 
 const ItemCount = () => {
     const [count, setCount] = useState(1)
+    const [cart, setCart] = useState([])
     const stock = 10
     const addProduct = () => {
         if (count < stock) {
@@ -16,9 +17,11 @@ const ItemCount = () => {
             setCount(count - 1)
     }
 
-    useEffect(() => {
-        <p>{count}</p>
-    })
+    const onAdd = () => {
+        setCart([...cart,"producto"])
+        console.log(cart)
+    }
+
     return (
 
 
@@ -28,7 +31,7 @@ const ItemCount = () => {
                 <p>{count}</p>
                 <button className='btns' onClick={addProduct}>+</button>
             </div>
-            <button className='btn-Add'>Agregar al Carrito</button>
+            <button className='btn-Add'onClick={onAdd}>Agregar al Carrito</button>
         </div>
     )
 }

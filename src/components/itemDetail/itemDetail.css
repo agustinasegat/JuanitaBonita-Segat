@@ -1,0 +1,104 @@
+@media (max-width:768px){
+    .itemDetail-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid gainsboro;
+        font-family: "Varela Round";
+        margin: 10%;
+    }
+
+    .itemDetail-Title{
+        font-size: 30px;
+        margin: 5%;
+        text-align: center;
+    
+    }
+    
+    .itemDetail-Description{
+        font-size: 18px;
+        margin: 5%;
+        text-align: center
+    }
+    
+    .itemDetail-Price{
+        font-size: 30px;
+        margin: 5%;
+        text-align: center;
+    
+    }
+    
+    .itemDetail-Button{
+        margin: 5%;
+        background: #F50F6B;
+        border: #F50F6B;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 18px;
+        color: white;
+        width: 200px;
+    }
+    
+    .itemDetail-Button:hover{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    
+
+
+.itemDetail-Container{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    border: 2px solid gainsboro;
+    font-family: "Varela Round";
+}
+
+.itemDetail-Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+.itemDetail-Title{
+    font-size: 30px;
+    margin: 5%;
+    text-align: center;
+
+}
+
+.itemDetail-Description{
+    font-size: 18px;
+    margin: 5%;
+    text-align: center
+}
+
+.itemDetail-Price{
+    font-size: 30px;
+    margin: 5%;
+    text-align: center;
+
+}
+
+.itemDetail-Button{
+    margin: 5%;
+    background: #F50F6B;
+    border: #F50F6B;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    width: 200px;
+}
+
+.itemDetail-Button:hover{
+    transform: scale(1.1);
+}
+}
