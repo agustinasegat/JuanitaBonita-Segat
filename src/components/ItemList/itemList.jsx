@@ -3,16 +3,14 @@ import Item from "../item/item"
 
 
 
-const ItemList = ({items}) => {
+const ItemList = ({producto}) => {
        
     return(
     <div>
-    {items.map((product => {
+    {producto.map((prod => {
 
         return (
-            <Item title={product.title} images={product.images} price={product.price}/>
-
-
+            <Item title={prod.title} image={prod.images} price={prod.price} id={prod.id}/>
         )
     }))}
     

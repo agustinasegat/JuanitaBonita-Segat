@@ -1,15 +1,17 @@
 import React from 'react';
 import './itemListContainer.css';
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/itemList';
 
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([])
+  const {idproducto} = useParams();
+
   const fetchData = async () => {
 
     try {
-    
       const data = await fetch('https://api.escuelajs.co/api/v1/categories/1/products');
       const items = await data.json()
       setProducts(items)
@@ -24,7 +26,7 @@ const ItemListContainer = () => {
   useEffect(() => { setTimeout(() => { fetchData()}, 2000) }, [])
 
   return (
-    <ItemList items={products}/>
+    <ItemList producto={products}/>
   )
 
 

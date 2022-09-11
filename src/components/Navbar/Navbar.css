@@ -1,42 +1,35 @@
-.nav {
-    background-color: #FFFFFF;
+.nav-bg {
+    background-color: #F2F2F2;
     font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     box-shadow: 5px 5px 5px 5px #9E9E9E;
-    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .container_logo {
     display: flex;
-    align-items: center
+    align-items: center;
+    margin-right: 20%;
 }
 
 .logo {
-    height: 50px
-}
-
-.logo_name {
-    color: #F50F6B;
-    letter-spacing: 1px;
-    font-family: "Varela Round";
-    font-weight: 500;
-    font-size: 20px
+    height: 100px
 }
 
 .links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    text-decoration: none;
 }
 
 .items {
-    display: inline-block;
-    padding: 10px;
+    padding-left: 30px;
     text-decoration: none;
-    color: #F50F6B;
+    color: #DA9ABD;
     letter-spacing: 2px;
     font-family: "Varela Round";
     font-weight: 500
@@ -47,10 +40,10 @@
 }
 
 .saleItem {
-    display: inline-block;
+    margin-left: 30px ;
     padding: 10px;
     text-decoration: none;
-    background-color: #F50F6B;
+    background-color: #DA9ABD;
     color: #FFFFFF;
     font-weight: 700;
     letter-spacing: 2px;
@@ -59,4 +52,28 @@
 
 .saleItem:hover {
     color: black
+}
+
+.cartWidget-Container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 20%;
+}
+
+
+@media (max-width: 992px){
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 10%;
+    }
+    .cartWidget-Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
 }

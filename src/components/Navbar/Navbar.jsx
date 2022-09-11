@@ -1,27 +1,42 @@
 import CartWidget from '../cartWidget/cartWidget';
 import Logo from '../images/Logo.png';
-import './Navbar.css'
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = () => {
+
+function NavbarBoots() {
     return (
-        <nav className="nav">
-            <div className="container_logo">
-                <img src={Logo} className="logo" alt="" />
-                <h1 className='logo_name'>Juanita Bonita</h1>
-            </div>
-            <div className='links'>
-                <a  className="items" href="">Inicio</a>
-                <a className="items" href="">Collares</a>
-                <a className="items" href="">Pulseras</a>
-                <a className="items" href="">Anillos</a>
-                <a className='saleItem' href="">REBAJAS</a>
-            </div>
-            <CartWidget/>
-        </nav>
-    )
+        <Navbar className='nav-bg' collapseOnSelect expand="lg">
+            <Container>
+                <Navbar.Brand>
+                  <Link to={"/"}>
+                    <div className="container_logo">
+                        <img src={Logo} className="logo" alt="" />
+                    </div>
+                    </Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav>
+                        <div className='links'>
+                        <Link className="items"to={"/"}>Inicio</Link>
+                            <a className="items" href="">Collares</a>
+                            <a className="items" href="">Pulseras</a>
+                            <a className="items" href="">Anillos</a>
+                            <a className='saleItem' href="">REBAJAS</a>
+                        </div>
+                        <div className='cartWidget-Container'>
+                            <CartWidget />
+                        </div>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 }
 
-
-
-export default Navbar;
+export default NavbarBoots;
 
