@@ -7,12 +7,11 @@ import ItemList from '../ItemList/itemList';
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([])
-  const {idproducto} = useParams();
 
   const fetchData = async () => {
 
     try {
-      const data = await fetch('https://api.escuelajs.co/api/v1/categories/1/products');
+      const data = await fetch('./database/db.json');
       const items = await data.json()
       setProducts(items)
       console.log(items)

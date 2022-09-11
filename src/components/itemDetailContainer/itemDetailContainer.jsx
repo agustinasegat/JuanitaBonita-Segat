@@ -4,6 +4,7 @@ import ItemDetail from '../itemDetail/itemDetail';
 
 
 
+
 const ItemDetailContainer = () => {
   const [product, setItem] = useState([])
 
@@ -11,7 +12,7 @@ const ItemDetailContainer = () => {
 
     try {
     
-      const data = await fetch('https://api.escuelajs.co/api/v1/categories/1/products');
+      const data = await fetch('./database/db.json');;
       const items = await data.json()
       setItem(items)
       console.log(items)

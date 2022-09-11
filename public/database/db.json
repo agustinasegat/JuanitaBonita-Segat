@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Aros hélix",
+        "images": "database/images/1.jpeg",
+        "description": "Aros de acero quirurgico",
+        "category": "Aros",
+        "price": 800
+    },
+    {
+        "id": 2,
+        "title": "Pulsera con dije corazón",
+        "images": "database/images/2.jpeg",
+        "description": "Pulsera de acero con dijes",
+        "category": "Pulseras",
+        "price": 1000
+    },
+    {
+        "id": 3,
+        "title": "Collar Cadena",
+        "images": "database/images/3.jpeg",
+        "description": "Collar con cadena de acero quirúrgico",
+        "category": "Collares",
+        "price": 1200
+    },
+    {
+        "id": 4,
+        "title": "Pulseras de acero quirúrgico",
+        "images": "database/images/4.jpeg",
+        "description": "Precio por unidad",
+        "category": "Pulseras",
+        "price": 1000
+    },
+    {
+        "id": 5,
+        "title": "Aros hélix",
+        "images": "database/images/5.jpeg",
+        "description": "Aros de acero quirurgico",
+        "category": "Aros",
+        "price": 800
+    },
+    {
+        "id": 6,
+        "title": "Pulseras de acero quirúrgico",
+        "images": "database/images/6.jpeg",
+        "description": "Precio por unidad",
+        "category": "Pulseras",
+        "price": 1000
+    }
+]
