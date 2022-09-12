@@ -1,12 +1,13 @@
 import React from "react"
+import "./itemList.css"
 import Item from "../item/item"
 
 
 
 const ItemList = ({producto}) => {
-       
     return(
-    <div>
+        
+    <div className="itemList">
     {producto.map((prod => {
 
         return (

@@ -11,7 +11,7 @@ const ItemListContainer = () => {
   const fetchData = async () => {
 
     try {
-      const data = await fetch('./database/db.json');
+      const data = await fetch("https://api.escuelajs.co/api/v1/categories/1/products");
       const items = await data.json()
       setProducts(items)
       console.log(items)

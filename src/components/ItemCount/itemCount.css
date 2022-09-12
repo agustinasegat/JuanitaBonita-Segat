@@ -1,18 +1,8 @@
-.item-Count {
-    background-color: gainsboro;
-     height: 300px;
-     width: 300px;
-    font-family: "Varela Round";
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 
-}
 
 .container-Count {
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #9E9E9E;;
     background-color: white;
     display: flex;
     width: 200px;
@@ -22,7 +12,7 @@
 }
 
 .btns {
-    background: #F50F6B;
+    background-color: #da9abd;
     border: none;
     height: 30px;
     width: 30px;
@@ -32,9 +22,9 @@
 }
 
 .btn-Add{
-    margin: 5%;
-    background: #F50F6B;
-    border: #F50F6B;
+    margin-top: 5%;
+    background-color: #da9abd;
+    border: none;
     border-radius: 10px;
     padding: 15px;
     font-size: 18px;
