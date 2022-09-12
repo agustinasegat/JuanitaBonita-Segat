@@ -23,10 +23,10 @@ function NavbarBoots() {
                     <Nav>
                         <div className='links'>
                         <Link className="items"to={"/"}>Inicio</Link>
-                            <a className="items" href="">Collares</a>
-                            <a className="items" href="">Pulseras</a>
-                            <a className="items" href="">Anillos</a>
-                            <a className='saleItem' href="">REBAJAS</a>
+                        <Link className="items"to={"/categoria/:idcategoria"}>Collares</Link>
+                        <Link className="items"to={"/categoria/:idcategoria"}>Pulseras</Link>
+                        <Link className="items"to={"/categoria/:idcategoria"}>Anillos</Link>
+                        <Link className="saleItem"to={"/categoria/:idcategoria"}>REBAJAS</Link>
                         </div>
                         <div className='cartWidget-Container'>
                             <CartWidget />
